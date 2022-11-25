@@ -1,0 +1,19 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: 当前文件",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": ["--name", "face_recon_feat0.2_augment",
+                    "--epoch", "20",
+                    "--img_folder", "./datasets/img_crop_celeba_sample"],
+            // "args": ["checkpoints/dlib/data", "datasets/img_crop_celeba_sample/"]
+        }
+    ]
+}

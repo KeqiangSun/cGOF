@@ -1,0 +1,90 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "env":{
+                "CUDA_VISIBLE_DEVICES":"5"
+            },
+
+            "args": ["--curriculum", "pigan_recon4_snm_depr10000_norm1000_lm3d10_warp3d10_bgdepr10000_georeg500_lastback",
+                    //  "--output_dir", "outputs/pigan_recon4_warping2",
+                     "--output_dir", "outputs/debug",
+                     "--load_dir", "outputs/pigan_recon4_snm_depr10000_norm1000_lm10_expwarp10_bgdepr10000_georeg500",
+                     "--save_depth",
+                     "--print_level", "info",
+                     "--port", "22476",
+                    //  "--sample_interval", "10",
+                    //  "--fid",
+                    ], // train.py
+            // --output_dir outputs/ControlableCelebA_depth0_ldmk0 --save_depth --print_level 'debug'] // train.py
+
+            // "args": ["outputs/CelebA_pigan_spade0_tddfa10_depth10_style10_pretrain2/generator.pth",
+            //         "--curriculum", "CelebA_pigan_spade0_tddfa10_depth10_style10",
+            //         "--seeds", "0", "1",
+            //         "--save_depth"], // render_multiview_images.py
+
+            // "args": [
+            //     "outputs/pigan_recon4_snm_depr10000_norm1000_lm10/generator.pth",
+            //     "--curriculum", "pigan_recon4_snm_depr10000_norm1000_lm10",
+            //     "--range", "20", "40", "1",
+            //     "--image_size", "128", "--split", "True",
+            //     "--exp_num", "2",
+            //     "--output_dir", "imgs/exp_warping",
+            //     "--rows", "3",
+            //     "--save_depth", "True"], // render_exp_warping.py
+            // // // python tools/eval/render/render_exp_warping.py outputs/pigan_recon4_snm_depr10000/generator.pth --curriculum pigan_recon4_snm_depr10000 --range 0 10 1 --image_size 128 --split True --save_depth True
+
+            // "args": [
+            //     "outputs/pigan_recon4_snm_depr10000_norm1000_lm10/generator.pth",
+            //     "--curriculum", "pigan_recon4_snm_depr10000_norm1000_lm10",
+            //     "--range", "0", "100", "1",
+            //     "--image_size", "128", "--split", "True",
+            //     "--exp_num", "12",
+            //     "--rows", "5",
+            //     "--pre_exp",
+            //     "--save_depth", "True",], // render_exp_warping.py
+            // // // python tools/eval/render/render_exp_warping.py outputs/pigan_recon4_snm_depr10000/generator.pth --curriculum pigan_recon4_snm_depr10000 --range 0 10 1 --image_size 128 --split True --save_depth True
+
+            // "cwd": "/home/kqsun/Tasks/pigan/face-parsing.PyTorch",
+
+            // "args": [
+            //     "--generator_path",
+            //     "outputs/pigan_finetune/generator.pth"
+            // ],
+            
+            // "args": [
+            //     "outputs/pigan_recon4_snm_depr10000/generator.pth",
+            //     "--range", "0", "2", "1",
+            //     "--curriculum", "pigan_recon4_snm_depr10000",
+            //     "--save_depth",
+            //     "--output_dir", "eval/pigan_recon4_snm_depr10000",
+            //     "--snm",
+            //     "--using_cross_test",
+            //     "--using_correlation_test"
+            // ], // eval_pigan.py
+            // // CUDA_VISIBLE_DEVICES=0 python tools/eval/eval_pigan_.py outputs/pigan_recon4/generator.pth --range 0 100 1 --curriculum pigan_recon4 --save_depth --output_dir eval/pigan_recon4 --using_cross_test --using_correlation_test
+
+            // "args": [
+            //     "outputs/pigan_recon4/generator.pth",
+            //     "--real_image_dir", "EvalImages/CropCelebA_real_images_128/",
+            //     "--curriculum", "pigan_recon4",
+            // ],
+            // python tools/eval/eval_metrics.py outputs/pigan_recon4/generator.pth --real_image_dir EvalImages/CropCelebA_real_images_128/ --curriculum pigan_recon4
+
+            // "args": [
+            //     // "--debug",
+            //     "--save_freq", "10",
+            // ], // train_volume_warper_ddp.py
+
+            "stopOnEntry": true
+        }
+    ]
+}

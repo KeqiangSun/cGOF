@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0,1,2,3 python train_pigan_spade_msra_contrastive_depthdisc.py --curriculum $1  --output_dir outputs/$1 --load_dir outputs/$2 --save_depth --print_level 'info' --port 12306

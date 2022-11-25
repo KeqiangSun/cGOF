@@ -1,0 +1,10 @@
+torch>=1.7
+numpy<1.21
+opencv-python
+torchvision
+scipy
+tqdm
+lmdb
+pyyaml
+tb-nightly
+yapf

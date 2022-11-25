@@ -1,0 +1,12 @@
+#BASICSR_JIT=True python inference_gfpgan.py -i /home/kqsun/Tasks/tmp_zn/data/0502/factor3_subject2048_variation1_angle0.5_psi0.7  -o res0502_facetor3_a0.5p0.7_v1 -v 1 -s 2 --aligned
+# BASICSR_JIT=True python inference_gfpgan.py -i /home/kqsun/Tasks/tmp_zn/data/0502/factor3_subject2048_variation1_anglemultiplier0p5_512  -o res0502_0p5_v1.02 -v 1.02 -s 2 --aligned
+# CUDA_VISIBLE_DEVICES=4 BASICSR_JIT=True python inference_gfpgan.py -i /home/kqsun/Tasks/tmp_zn/GFPGAN/datasets/faces/validation/input  -o res0513/0502_0p5_v1.04_tmp -v 1.04 -s 2 --aligned
+# CUDA_VISIBLE_DEVICES=4 BASICSR_JIT=True python inference_gfpgan.py -i /home/kqsun/Tasks/tmp_zn/data/0502/factor3_subject2048_variation1_anglemultiplier0p5_512  -o res0513/0502_0p5_v1.03_tmp -v 1.04 -s 2 --aligned
+# CUDA_VISIBLE_DEVICES=1 BASICSR_JIT=True python inference_gfpgan.py -i /home/kqsun/Tasks/tmp_zn/data/disentangle_score_data_128/factor3_subject1000_variation10_anglex3_512  -o res0429/f3_a3 -v 1.02 -s 2 --aligned
+# CUDA_VISIBLE_DEVICES=4 BASICSR_JIT=True python inference_gfpgan.py -i /home/kqsun/Tasks/tmp_zn/data/disentangle_score_data_128/factor3_subject1000_variation10_anglex3_512  -o res0429/sf3_a3 -v 1.03 -s 2 --aligned
+CUDA_VISIBLE_DEVICES=4 BASICSR_JIT=True python inference_gfpgan.py -i /home/kqsun/Tasks/tmp_zn/data/0514/pigan_recon4_snm_depr10000_norm1000_lm10_expwarp10_bgdepr10000_georeg500_lastback_lm3d300/factor0_subject1000_variation10_angle1.0_psi1.0 -o res0429/test0514_f0 -v 1.02 -s 2 --aligned
+CUDA_VISIBLE_DEVICES=4 BASICSR_JIT=True python inference_gfpgan.py -i /home/kqsun/Tasks/tmp_zn/data/0514/pigan_recon4_snm_depr10000_norm1000_lm10_expwarp10_bgdepr10000_georeg500_lastback_lm3d300/factor1_subject1000_variation10_angle1.0_psi1.0 -o res0429/test0514_f1 -v 1.02 -s 2 --aligned
+CUDA_VISIBLE_DEVICES=4 BASICSR_JIT=True python inference_gfpgan.py -i /home/kqsun/Tasks/tmp_zn/data/0514/pigan_recon4_snm_depr10000_norm1000_lm10_expwarp10_bgdepr10000_georeg500_lastback_lm3d300/factor3_subject1000_variation10_angle3.0_psi1.0 -o res0429/test0514_f3 -v 1.02 -s 2 --aligned
+# CUDA_VISIBLE_DEVICES=4 BASICSR_JIT=True python inference_gfpgan.py -i /home/kqsun/Tasks/tmp_zn/data/disentangle_score_data_128/factor1_subject1000_variation10_512  -o res0513/sf1 -v 1.04 -s 2 --aligned
+# CUDA_VISIBLE_DEVICES=4 BASICSR_JIT=True python inference_gfpgan.py -i /home/kqsun/Tasks/tmp_zn/data/disentangle_score_data_128/factor3_subject1000_variation10_512  -o res0513/sf3 -v 1.04 -s 2 --aligned
+

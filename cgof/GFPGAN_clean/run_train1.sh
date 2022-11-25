@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=4,5,6,7 BASICSR_JIT=True python -m torch.distributed.launch --nproc_per_node=4 --master_port=22023 gfpgan/train.py -opt options/test_v1_simple_ffhq.yml --launcher pytorch --auto_resume

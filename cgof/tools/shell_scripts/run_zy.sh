@@ -1,0 +1,7 @@
+CUDA_VISIBLE_DEVICES=0,1,2,3 python train_pigan_spade_msra_contrastive_depthdisc.py --curriculum pretrained_using_cid \
+--output_dir  outputs/pretrained_using_cid \
+--load_dir outputs/pretrain_recon5 --save_depth --print_level 'info'
+# CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python train_pigan_spade_tddfa_contrastive_depthdisc.py --curriculum CelebA_pigan_spade0_tddfa1p5_depth0_style0_wingloss_depthd1p5_depthg1p5_reld_minv --output_dir outputs/CelebA_pigan_spade0_tddfa1p5_depth0_style0_wingloss_depthd1p5_depthg1p5_reld_minv --load_dir outputs/CelebA_pigan_spade0_tddfa10_depth10_style10_pretrain2 --save_depth --print_level 'info'
+# CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python train_pigan_spade_tddfa_contrastive_depthdisc.py --curriculum CelebA_pigan_spade0_tddfa1p5_depth0_style0_wingloss_depthd1p5_depthg1p5_reld --output_dir outputs/CelebA_pigan_spade0_tddfa1p5_depth0_style0_wingloss_depthd1p5_depthg1p5_reld --load_dir outputs/CelebA_pigan_spade0_tddfa10_depth10_style10_pretrain2 --save_depth --print_level 'info'
+#CUDA_VISIBLE_DEVICES=0 python train_pigan_spade_tddfa_contrastive_depthdisc.py --curriculum CelebA_pigan_spade0_tddfa1p5_depth0_style0_wingloss_depthd1p5_depthg1p5_reld --output_dir outputs/CelebA_pigan_spade0_tddfa1p5_depth0_style0_wingloss_depthd1p5_depthg1p5_reld --load_dir outputs/CelebA_pigan_spade0_tddfa10_depth10_style10_pretrain2 --save_depth --print_level 'info'
+

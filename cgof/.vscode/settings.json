@@ -1,0 +1,8 @@
+{
+    "editor.foldingStrategy": "indentation",
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "python.linting.pycodestyleEnabled": true,
+    "python.analysis.extraPaths": [
+        "./Deep3DFaceRecon_pytorch"
+    ]
+}
