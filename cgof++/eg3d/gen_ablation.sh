@@ -1,0 +1,24 @@
+# eg3d
+CUDA_VISIBLE_DEVICES=2 python gen_disco.py --outdir=imgs/eg3d_128_iter4800 --trunc=1.0 --shapes=false --subject=1000 --variation=10 --network=outputs/eg3d_128/00003-ffhq-FFHQ_128-gpus8-batch32-gamma1/network-snapshot-004800.pkl --factor=0 --angle_multiplier=0.0 --reload_modules=True&
+CUDA_VISIBLE_DEVICES=3 python gen_disco.py --outdir=imgs/eg3d_128_iter4800 --trunc=1.0 --shapes=false --subject=1000 --variation=10 --network=outputs/eg3d_128/00003-ffhq-FFHQ_128-gpus8-batch32-gamma1/network-snapshot-004800.pkl --factor=1 --angle_multiplier=0.0 --reload_modules=True&
+CUDA_VISIBLE_DEVICES=4 python gen_disco.py --outdir=imgs/eg3d_128_iter4800 --trunc=1.0 --shapes=false --subject=1000 --variation=10 --network=outputs/eg3d_128/00003-ffhq-FFHQ_128-gpus8-batch32-gamma1/network-snapshot-004800.pkl --factor=3 --angle_multiplier=2.0 --reload_modules=True&
+
+# recon4
+CUDA_VISIBLE_DEVICES=2 python gen_disco.py --outdir=imgs/eg3d_128_iter4800_recon4 --trunc=1.0 --shapes=false --subject=1000 --variation=10 --network=outputs/eg3d_128_iter4800_recon4/00000-ffhq-FFHQ_128-gpus8-batch32-gamma1/network-snapshot-005200.pkl --factor=0 --angle_multiplier=0.0 --reload_modules=True&
+CUDA_VISIBLE_DEVICES=3 python gen_disco.py --outdir=imgs/eg3d_128_iter4800_recon4 --trunc=1.0 --shapes=false --subject=1000 --variation=10 --network=outputs/eg3d_128_iter4800_recon4/00000-ffhq-FFHQ_128-gpus8-batch32-gamma1/network-snapshot-005200.pkl --factor=1 --angle_multiplier=0.0 --reload_modules=True&
+CUDA_VISIBLE_DEVICES=4 python gen_disco.py --outdir=imgs/eg3d_128_iter4800_recon4 --trunc=1.0 --shapes=false --subject=1000 --variation=10 --network=outputs/eg3d_128_iter4800_recon4/00000-ffhq-FFHQ_128-gpus8-batch32-gamma1/network-snapshot-005200.pkl --factor=3 --angle_multiplier=2.0 --reload_modules=True&
+
+# snm
+CUDA_VISIBLE_DEVICES=5 python gen_disco.py --outdir=imgs/eg3d_128_iter4800_recon4_snm --trunc=1.0 --shapes=false --subject=1000 --variation=10 --network=outputs/eg3d_128_iter4800_recon4_snm/00003-ffhq-FFHQ_128-gpus8-batch32-gamma1/network-snapshot-001800.pkl --factor=0 --angle_multiplier=0.0 --reload_modules=True&
+CUDA_VISIBLE_DEVICES=6 python gen_disco.py --outdir=imgs/eg3d_128_iter4800_recon4_snm --trunc=1.0 --shapes=false --subject=1000 --variation=10 --network=outputs/eg3d_128_iter4800_recon4_snm/00003-ffhq-FFHQ_128-gpus8-batch32-gamma1/network-snapshot-001800.pkl --factor=1 --angle_multiplier=0.0 --reload_modules=True&
+CUDA_VISIBLE_DEVICES=7 python gen_disco.py --outdir=imgs/eg3d_128_iter4800_recon4_snm --trunc=1.0 --shapes=false --subject=1000 --variation=10 --network=outputs/eg3d_128_iter4800_recon4_snm/00003-ffhq-FFHQ_128-gpus8-batch32-gamma1/network-snapshot-001800.pkl --factor=3 --angle_multiplier=2.0 --reload_modules=True&
+
+# depr100
+CUDA_VISIBLE_DEVICES=2 python gen_disco.py --outdir=imgs/eg3d_128_iter4800_recon4_snm_depr100 --trunc=1.0 --shapes=false --subject=1000 --variation=10 --network=outputs/eg3d_128_iter4800_recon4_snm_depr100/00001-ffhq-FFHQ_128-gpus8-batch32-gamma1/network-snapshot-000600.pkl --factor=0 --angle_multiplier=0.0 --reload_modules=True&
+CUDA_VISIBLE_DEVICES=3 python gen_disco.py --outdir=imgs/eg3d_128_iter4800_recon4_snm_depr100 --trunc=1.0 --shapes=false --subject=1000 --variation=10 --network=outputs/eg3d_128_iter4800_recon4_snm_depr100/00001-ffhq-FFHQ_128-gpus8-batch32-gamma1/network-snapshot-000600.pkl --factor=1 --angle_multiplier=0.0 --reload_modules=True&
+CUDA_VISIBLE_DEVICES=4 python gen_disco.py --outdir=imgs/eg3d_128_iter4800_recon4_snm_depr100 --trunc=1.0 --shapes=false --subject=1000 --variation=10 --network=outputs/eg3d_128_iter4800_recon4_snm_depr100/00001-ffhq-FFHQ_128-gpus8-batch32-gamma1/network-snapshot-000600.pkl --factor=3 --angle_multiplier=2.0 --reload_modules=True&
+
+# ldmk6
+CUDA_VISIBLE_DEVICES=6 python gen_disco.py --outdir=imgs/eg3d_128_iter4800_recon4_snm_depr100_ldmk10 --trunc=1.0 --shapes=false --subject=1000 --variation=10 --network=outputs/eg3d_128_iter4800_recon4_snm_depr100_ldmk10/00000-ffhq-FFHQ_128-gpus8-batch32-gamma1/network-snapshot-000800.pkl --factor=0 --angle_multiplier=0.0 --reload_modules=True&
+CUDA_VISIBLE_DEVICES=7 python gen_disco.py --outdir=imgs/eg3d_128_iter4800_recon4_snm_depr100_ldmk10 --trunc=1.0 --shapes=false --subject=1000 --variation=10 --network=outputs/eg3d_128_iter4800_recon4_snm_depr100_ldmk10/00000-ffhq-FFHQ_128-gpus8-batch32-gamma1/network-snapshot-000800.pkl --factor=1 --angle_multiplier=0.0 --reload_modules=True&
+CUDA_VISIBLE_DEVICES=5 python gen_disco.py --outdir=imgs/eg3d_128_iter4800_recon4_snm_depr100_ldmk10 --trunc=1.0 --shapes=false --subject=1000 --variation=10 --network=outputs/eg3d_128_iter4800_recon4_snm_depr100_ldmk10/00000-ffhq-FFHQ_128-gpus8-batch32-gamma1/network-snapshot-000800.pkl --factor=3 --angle_multiplier=2.0 --reload_modules=True&
