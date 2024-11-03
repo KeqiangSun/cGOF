@@ -1,6 +1,8 @@
 # Controllable 3D Face Synthesis with Conditional Generative Occupancy Fields (cGOF)
 PyTorch implementation for the NeurIPS 2022 paper [cGOF](https://arxiv.org/abs/2206.08361) and the TPAMI 2023 paper [cGOF++](https://arxiv.org/abs/2211.13251).
 
+(This codebase is a work in progress —- I’m planning to find some time to clean it up.)
+
 <!-- ![Avatar](assets/teaser.png) -->
 
 ## Controllable 3D Face Synthesis with Conditional Generative Occupancy Fields
